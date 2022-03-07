@@ -6,3 +6,6 @@ set(COMPONENT_SRCS "main.c")
 set(COMPONENT_ADD_INCLUDEDIRS "")
 
 register_component()
+
+add_library(freeaptx STATIC "freeaptx.c")
+target_include_directories(freeaptx PUBLIC "./")
