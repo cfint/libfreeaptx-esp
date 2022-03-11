@@ -141,4 +141,19 @@ size_t aptx_decode_sync(struct aptx_context *ctx,
  */
 size_t aptx_decode_sync_finish(struct aptx_context *ctx);
 
+size_t aptx_decode16(struct aptx_context *ctx,
+                     const unsigned char *input,
+                     size_t input_size,
+                     unsigned char *output,
+                     size_t output_size,
+                     size_t *written);
+
+size_t aptx_decode32(struct aptx_context *ctx,
+                     const unsigned char *input,
+                     size_t input_size,
+                     unsigned char *output,
+                     size_t output_size,
+                     size_t *written);
+
+
 #endif
