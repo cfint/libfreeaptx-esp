@@ -1,0 +1,9 @@
+menu "Audio Processing Technology codec (aptX)"
+
+    config APTX_DECODER
+        bool "Enable aptX codec"
+        default n
+        help
+            Free implementation of Audio Processing Technology codec (aptX).
+
+endmenu
